@@ -1,0 +1,29 @@
+- Teach about avoiding `any` (and more uncommonly `object`) when necessary.
+    - Type when possibly, and if not, problem can probably be solved with an indexed Type
+    - Teach indexed types
+
+- Teach literal types, such as string/number/boolean literals
+
+- Now that we can the concept of indexed types, and literal types, can teach mapped types
+    - Teach keyof to get the current keys literal from an interface
+    - Use this to create a custom Record types
+    - And a pick type
+    - And a partial type
+    - Explain that these types and more are already built into typescript
+
+- Teach more complex mapped types with subtraction of modifiers
+
+- Teach get types of properties on interfaces.
+    - Make point about with arrays, can access the base type with T[number]
+
+- All this culminates into showing how to construct db return types in Sauce, with an array of column names.
+
+- Teach overloads
+
+- Teach conditional types
+    - Teach infer with conditionals
+    - Create custom ReturnType
+    - Show that its built-in
+    - Show how to unpromisify a type
+
+- Show how to extend global namespace to add your own useful types
