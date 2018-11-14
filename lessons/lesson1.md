@@ -1,3 +1,5 @@
+# Any
+
 One of the strongest abilities of typescript is the `any` type.
 It allows you to assert your will when you know better than the compiler.
 It's useful for things like when you're using 3rd party typings that may not be 100% correct,
@@ -10,7 +12,7 @@ but if we cast to any, we can get away with using a number as the argument.
 
 ```typescript
 let n = 5;
-let x1 = TestModule.foo(n); `[ts] Argument of type 'number' is not assignable to parameter of type 'string'.`
+let x1 = TestModule.foo(n); //[ts] Argument of type 'number' is not assignable to parameter of type 'string'.
 let x2 = TestModule.foo(n as any); //Works
 ```
 

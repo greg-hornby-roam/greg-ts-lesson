@@ -1,3 +1,5 @@
+# Indexed Types
+
 If you need an object that works as a hashmap and can store a variety of keys, consider using an index type.  
 An index type works by creating an interface where you define the type of the key (usually just `string`), and the type of the value.
 
