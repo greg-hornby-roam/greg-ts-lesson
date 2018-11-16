@@ -84,7 +84,6 @@ type Bar = Record<"a" | "b" | "c", string>;
 
 ---
 
-## `Readonly` and `Nullable` types
+## `Readonly` type
 
-`Readonly<T>` takes an interface and adds `readonly` modifier to all properties.  
-`Nullable<T>` takes an interface and makes every property allowed to be `null` in addition to its regular type
+`Readonly<T>` takes an interface and adds `readonly` modifier to all properties
