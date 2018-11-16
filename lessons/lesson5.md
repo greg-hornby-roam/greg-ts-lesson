@@ -1,4 +1,4 @@
-# keyof Operator
+# `keyof` Operator
 
 You can use the `keyof` operator to extract a string literal union type of the keys of an interface.
 
