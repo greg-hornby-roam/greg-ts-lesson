@@ -25,12 +25,10 @@ Bar(input: string | number, _otherParam: string | number) { //Implementation
 What if we want to define some overloads with different amount of arguments and argument types.
 
 ```typescript
-class Point {
-    constructor(public x: number, public y: number) {}
-}
+class Point {constructor(public x: number, public y: number) {}}
 
 class MyCanvas {
-
+    
     Draw4SidedPolygon(bounds: [Point, Point, Point, Point]): void;
     Draw4SidedPolygon(p1: Point, p2: Point, p3: Point, p4: Point): void;
     Draw4SidedPolygon(
@@ -44,15 +42,11 @@ class MyCanvas {
         let bounds: [Point, Point, Point, Point];
 
         if (args.length === 1) {
-
             bounds  = args[0];
-
         } else if (args.length === 4) {
-
             bounds = [args[0], args[1], args[2], args[3]];
-
+            // bounds = [...args] as typeof bounds; <-- This is equivalent. Requires an `as` assertion though.
         } else if (args.length === 8) {
-
             bounds = [
                 new Point(args[0], args[1]),
                 new Point(args[2], args[3]),
@@ -61,7 +55,7 @@ class MyCanvas {
             ];
         }
 
-        //Draw a polygon using our `bounds` array
+        //Code to draw a polygon using our `bounds` array
     }
 }
 ```
