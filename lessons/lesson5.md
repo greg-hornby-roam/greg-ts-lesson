@@ -54,7 +54,7 @@ type ICarReadonly = {
 
 ---
 
-Note that if your interface properties already have modifieds, these will be carried over
+Note that if your interface properties already have modifiers, these will be carried over
 
 ```typescript
 interface IModdedCar {
