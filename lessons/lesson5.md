@@ -78,6 +78,12 @@ type IModdedCarRecreated = {
 You can remove modifiers using subtraction
 
 ```typescript
+interface IModdedCar {
+    readonly color?: "red" | "green" | "blue";
+    readonly model?: string;
+    readonly date?: Date;
+}
+
 type IOptionalCar = {
     -readonly [K in keyof IModdedCar]: IModdedCar[K];
 }
@@ -91,6 +97,12 @@ type IOptionalCar = {
 ```
 
 ```typescript
+interface IModdedCar {
+    readonly color?: "red" | "green" | "blue";
+    readonly model?: string;
+    readonly date?: Date;
+}
+
 type IReadonlyCar = {
     [K in keyof IModdedCar]-?: IModdedCar[K];
 }
@@ -104,6 +116,12 @@ type IReadonlyCar = {
 ```
 
 ```typescript
+interface IModdedCar {
+    readonly color?: "red" | "green" | "blue";
+    readonly model?: string;
+    readonly date?: Date;
+}
+
 type IOriginalCar = {
     -readonly [K in keyof IModdedCar]-?: IModdedCar[K];
 }
