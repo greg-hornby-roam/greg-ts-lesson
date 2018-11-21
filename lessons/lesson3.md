@@ -35,8 +35,12 @@ function PositionElement(
 }
 
 let e = document.getElementById("foo")!;
-PositionElement(e, "top"); //fine
-PositionElement(e, "center"); //[ts] Argument of type '"center"' is not assignable to parameter of type '"top" | "bottom" | "left" | "right"'.
+
+//fine
+PositionElement(e, "top");
+
+//[ts] Argument of type '"center"' is not assignable to parameter of type '"top" | "bottom" | "left" | "right"'.
+PositionElement(e, "center");
 ```
 
 ---

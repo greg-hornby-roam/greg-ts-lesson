@@ -17,7 +17,9 @@ As you can see it's very troublesome having to custom define the array of column
 We could make this slightly better with the use of `Pick`.
 
 ```typescript
-let result = await this.Query.Run<Pick<IIdentity, "email" | "mobileNumber" | "verified">>(query, {single: true});
+let result = await this.Query.Run<
+    Pick<IIdentity, "email" | "mobileNumber" | "verified">
+>(query, {single: true});
 ```
 
 But we still have to make sure the columns in our pick match the columns in our select array.

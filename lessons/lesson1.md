@@ -12,8 +12,12 @@ but if we cast to any, we can get away with using a number as the argument.
 
 ```typescript
 let n = 5;
-let x1 = TestModule.foo(n); //[ts] Argument of type 'number' is not assignable to parameter of type 'string'.
-let x2 = TestModule.foo(n as any); //Works
+
+//[ts] Argument of type 'number' is not assignable to parameter of type 'string'.
+let x1 = TestModule.foo(n);
+
+//Works
+let x2 = TestModule.foo(n as any);
 ```
 
 ---

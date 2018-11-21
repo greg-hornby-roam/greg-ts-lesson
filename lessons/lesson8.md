@@ -33,7 +33,12 @@ class MyCanvas {
 
     Draw4SidedPolygon(bounds: [Point, Point, Point, Point]): void;
     Draw4SidedPolygon(p1: Point, p2: Point, p3: Point, p4: Point): void;
-    Draw4SidedPolygon(p1x: number, p1y: number, p2x: number, p2y: number, p3x: number, p3y: number, p4x: number, p4y: number): void;
+    Draw4SidedPolygon(
+        p1x: number, p1y: number,
+        p2x: number, p2y: number,
+        p3x: number, p3y: number,
+        p4x: number, p4y: number
+    ): void;
     Draw4SidedPolygon(...args: any[]): void {
 
         let bounds: [Point, Point, Point, Point];
