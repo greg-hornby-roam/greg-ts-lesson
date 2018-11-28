@@ -1,6 +1,6 @@
 # Literal Types
 
-In typescript, the `string`, `number` and `Date` types can be split even further into literal types.  
+In typescript, the `string`, `number` and `boolean` types can be split even further into literal types.  
 You can define types as actuals strings, numbers or true/false.
 
 ```typescript
